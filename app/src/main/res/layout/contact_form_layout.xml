@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nameFormIcon"
+            style="@style/AppTheme.ImageView"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_perm_identity_black_24" />
+
+        <EditText
+            android:id="@+id/firstNameField"
+            style="@style/AppTheme.ContactForm.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_mxlarge"
+            android:hint="@string/first_name_hint" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/lastNameField"
+        style="@style/AppTheme.ContactForm.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xxxlarge"
+        android:layout_marginEnd="@dimen/spacing_mxlarge"
+        android:hint="@string/last_name_hint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phoneFormIcon"
+            style="@style/AppTheme.ImageView"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_phone_black_24dp" />
+
+        <EditText
+            android:id="@+id/phoneField"
+            style="@style/AppTheme.ContactForm.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_mxlarge"
+            android:hint="@string/phone_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/emailFormIcon"
+            style="@style/AppTheme.ImageView"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_email_black_24dp" />
+
+        <EditText
+            android:id="@+id/emailField"
+            style="@style/AppTheme.ContactForm.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_mxlarge"
+            android:hint="@string/email_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/addressFormIcon"
+            style="@style/AppTheme.ImageView"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_place_black_24dp" />
+
+        <EditText
+            android:id="@+id/addressField"
+            style="@style/AppTheme.ContactForm.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_mxlarge"
+            android:hint="@string/address_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/websiteFormIcon"
+            style="@style/AppTheme.ImageView"
+            android:layout_width="@dimen/spacing_mxlarge"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:src="@drawable/ic_public_black_24dp" />
+
+        <EditText
+            android:id="@+id/websiteField"
+            style="@style/AppTheme.ContactForm.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_mxlarge"
+            android:hint="@string/website_hint" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        style="@style/AppTheme.ContactForm.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xxxlarge"
+        android:layout_marginTop="@dimen/spacing_xxxxlarge"
+        android:layout_marginEnd="@dimen/spacing_mxlarge"
+        android:text="@string/save_button_label"
+        android:onClick="onButtonClick"/>
+
+</LinearLayout>
